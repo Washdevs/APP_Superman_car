@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.icones-de-status {
+  display: flex;
+  gap: 5px;
+}
+
+.logotipo {
+  width: 200px;
+  height: 200px;
+  margin: 40px 0;
+}
+
+.texto-login {
+  color: #666;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.caixa-input {
+  width: 85%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.caixa-senha {
+  position: relative;
+}
+
+.icone-olho {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.esqueceu-senha {
+  text-align: right;
+  width: 85%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.esqueceu-senha a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.botao-entrar {
+  width: 85%;
+  max-width: 300px;
+  padding: 12px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.texto-cadastro {
+  color: #666;
+  font-size: 14px;
+}
+
+.texto-cadastro a {
+  color: #007aff;
+  text-decoration: none;
+}
