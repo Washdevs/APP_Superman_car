@@ -140,7 +140,7 @@ body {
 }
 
 .product-card .product-info .product-buttons button {
-  background-color: #ff5722;
+  background-color: red;
   color: #ffffff;
   border: none;
   padding: 10px;
@@ -151,8 +151,8 @@ body {
 
 .product-card .product-info .product-buttons button.secondary {
   background-color: #ffffff;
-  color: #ff5722;
-  border: 1px solid #ff5722;
+  color: red;
+  border: 1px solid red;
 }
 
 .bottom-nav {
