@@ -1,0 +1,145 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 18px;
+  color: #007bff;
+  margin: 0;
+}
+
+header i {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-bar i {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.product-list {
+  padding: 15px;
+}
+
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.product-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h2 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.product-details .badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.badge-red {
+  background-color: #d9534f;
+}
+
+.badge-orange {
+  background-color: #f0ad4e;
+}
+
+.product-details .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d9534f;
+  margin-top: 5px;
+}
+
+.product-details .stock {
+  font-size: 12px;
+  color: #fff;
+  background-color: #f0ad4e;
+  padding: 3px 8px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.product-details .btn-detail {
+  background-color: #ffeb3b;
+  color: #333;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  color: #007bff;
+}
