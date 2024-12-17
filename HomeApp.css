@@ -194,3 +194,12 @@ body {
   color: #007bff;
   cursor: pointer;
 }
+
+@media (max-width: 438px) {
+  .text-limit {
+      white-space: nowrap; /* Impede quebra de linha */
+      overflow: hidden; /* Oculta texto que ultrapassa o limite */
+      text-overflow: ellipsis; /* Adiciona reticências (...) */
+      max-width: 22ch; /* Limita o texto a 22 caracteres */
+  }
+}
