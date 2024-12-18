@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -7,16 +7,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="DescProduto.css" />
 </head>
-
 <body>
   <div class="header">
     <a href="HomeApp.html" style="text-decoration: none; color: inherit;"><i
         class="fas fa-chevron-left back-button"></i></a></i>
-    <span> Descrição do Produto </span>
-    <i class="fas fa-chevron-right car-button"> </i>
+        <img src="imagens/Logo3.png" alt="Informações do Produto" class="header-logo" />
+    <i class="fas fa-chevron-right next-button"> </i>
   </div>
-  <img alt="Fonte Carregador Automotivo Storm 60A" class="product-image" height="250" src="imagens/Fonte.jpg"
-    width="400" />
+  <img alt="Fonte Carregador Automotivo Storm 60A" class="product-image" src="imagens/Fonte.jpg"/>
   <div class="product-info">
     <span class="brand-tag"> JFA </span>
     <h1 class="product-title">
@@ -26,7 +24,11 @@
     <div class="stock-info">
       <span class="stock-tag"> Estoque: 5 </span>
       <span class="stock-value"> Valor Estoque R$ 1.500,00 </span>
+      <span class="cart-button">
+        <a href=""><i class="fa fa-shopping-cart buy-button"></i></a>
+      </span>
     </div>
+    
   </div>
   <div class="description">
     <h3>Descrição do Produto</h3>
@@ -47,8 +49,10 @@
       <li>Proteção contra curto-circuito e sobrecarga</li>
     </ul>
   </div>
-  <a class="buy-button" href="#"> Comprar Agora </a>
-  <a class="fa fa-shopping-cart buy-button" href="#"></a>
+  <div class="buy-button-container">
+    <a class="buy-button" href="#"> Comprar Agora </a>
+  </div>
+  
   <nav class="bottom-nav">
     <a class="nav-item" href="#">
       <i class="fas fa-home"> </i>
@@ -59,11 +63,6 @@
       <i class="fas fa-box"> </i>
       <br />
       Produtos
-    </a>
-    <a class="nav-item" href="#">
-      <i class="fas fa-list-alt"> </i>
-      <br />
-      Informações
     </a>
     <a class="nav-item" href="#">
       <i class="fas fa-cog"> </i>
