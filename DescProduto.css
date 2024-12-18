@@ -31,13 +31,11 @@ body {
   height: auto;
 }
 
-
 .product-info {
   padding: 20px;
   text-align: center;
   position: relative;
 }
-
 
 .brand-tag {
   display: inline-block;
@@ -93,9 +91,8 @@ body {
   background-color: #0056b3; /* Cor de fundo ao passar o mouse */
 }
 
-
 .stock-tag {
-  background-color: #ff0026 ;
+  background-color: #ff0026;
   color: white;
   padding: 2px 8px;
   border-radius: 5px;
@@ -104,7 +101,7 @@ body {
 
 .stock-value {
   margin-top: 3px;
-  background-color: #ff0026 ;
+  background-color: #ff0026;
   color: white;
   padding: 2px 8px;
   border-radius: 5px;
@@ -134,7 +131,7 @@ body {
 }
 
 .buy-button {
-  background-color: #ff0026 ;
+  background-color: #ff0026;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -145,8 +142,8 @@ body {
   text-align: center;
 }
 
-.next-button{
-  background-color: #ff0026 ;
+.next-button {
+  background-color: #ff0026;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -157,8 +154,8 @@ body {
   text-align: center;
 }
 
-.back-button{
-  background-color: #ff0026 ;
+.back-button {
+  background-color: #ff0026;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -212,8 +209,6 @@ body {
     position: relative;
   }
 
-  
-  
   .product-title {
     font-size: 16px; /* Ajusta o tamanho do título */
   }
@@ -231,7 +226,7 @@ body {
   }
 
   .description {
-     padding-bottom: 5px;
+    padding-bottom: 5px;
   }
 
   .buy-button {
