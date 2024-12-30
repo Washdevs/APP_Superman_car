@@ -5,12 +5,59 @@ body {
   background-color: #fff;
 }
 
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-wrapper input {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 85%;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9; /* Sombra no input */
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: lightcoral;
+}
+
+.input-wrapper i {
+  position: absolute;
+  right: 1rem;
+  width: 24px; /* Tamanho do contêiner */
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px; /* Tamanho do "X" */
+  background-color: #f5f5f5; /* Cor de fundo */
+  border-radius: 0.5rem; /* Borda arredondada */
+  color: #333;
+  box-shadow: 0 0.4rem #dfd9d9; /* Sombra igual ao input */
+}
+
+.input-wrapper i:hover {
+  background-color: #ddd; /* Cor ao passar o mouse */
+  color: #000;
+}
+
+
+
+
 .header {
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #007bff;
   color: #007bff;
   border-bottom: 1px solid rgba(245, 245, 245, 0.73);
 }
@@ -172,9 +219,9 @@ body {
 
 .close {
   position: absolute;
-  top: 1px;
+  top: 28px;
   right: 30px;
-  font-size: 30px;
+  font-size: 35px;
   cursor: pointer;
 }
 
