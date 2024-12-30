@@ -10,6 +10,17 @@
 </head>
 
 <body>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modalBody">
+
+      </div>
+    </div>
+  </div>
+
+
   <header>
     <i class="fas fa-chevron-left"></i>
     <h1>Busca de Produtos</h1>
@@ -30,7 +41,7 @@
         <span class="stock">Estoque 100</span>
         <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 300,00</div>
-        <div class="btn-detail">Ver Detalhe</div>
+        <div id="openModal" class="btn-detail">Ver Detalhe</div>
       </div>
     </div>
     <div class="product-item">
@@ -44,7 +55,7 @@
         <span class="stock">Estoque 100</span>
         <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 1.200,00</div>
-        <div class="btn-detail">Ver Detalhe</div>
+        <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
     </div>
     <div class="product-item">
@@ -56,7 +67,7 @@
         <span class="stock">Estoque 100</span>
         <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
-        <div class="btn-detail">Ver Detalhe</div>
+        <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
     </div>
     <div class="product-item">
@@ -68,7 +79,7 @@
         <span class="stock">Estoque 100</span>
         <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
-        <div class="btn-detail">Ver Detalhe</div>
+        <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
     </div>
     <div class="product-item">
@@ -80,7 +91,7 @@
         <span class="stock">Estoque 100</span>
         <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
-        <div class="btn-detail">Ver Detalhe</div>
+        <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
     </div>
     <div class="product-item">
@@ -92,7 +103,7 @@
         <span class="stock">Estoque 100</span>
         <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
-        <div class="btn-detail">Ver Detalhe</div>
+        <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
     </div>
     <div class="product-item">
@@ -104,7 +115,7 @@
         <span class="stock">Estoque 100</span>
         <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
-        <div class="btn-detail">Ver Detalhe</div>
+        <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
     </div>
   </div>
@@ -130,6 +141,8 @@
       Menu
     </a>
   </nav>
+  <script src="script.js" defer></script>
+
 </body>
 
 </html>
