@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Busca de Produtos</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="BuscaProdutos.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busca de Produtos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="BuscaProdutos.css" />
+</head>
 
 <body>
 
   <div id="modal" class="modal">
     <div class="modal-content">
       <span id="closeModal" class="close">&times;</span>
-      <div id="modalBody">
-
-      </div>
+      <div id="modalBody"></div>
     </div>
   </div>
 
-
-  <header>
-    <i class="fas fa-chevron-left"></i>
-    <h1>Busca de Produtos</h1>
-    <i class="fas fa-chevron-right"></i>
-  </header>
+  <div class="header">
+    <a href="HomeApp.html" style="text-decoration: none; color: inherit;"><i class="fas fa-chevron-left back-button"
+        id="left-arrow"></i></a></i>
+    <img src="imagens/Logo3.png" alt="Informações do Produto" class="header-logo" />
+    <i class="fas fa-chevron-right next-button" id="right-arrow"> </i>
+  </div>
   <div class="search-bar">
-    <input type="text" placeholder="Pesquisar" />
+    <input type="text" id="input" placeholder="Pesquisar" />
     <i class="fas fa-times-circle"></i>
   </div>
   <div class="product-list">
@@ -45,9 +38,9 @@
           Fonte Carregador Automotivo Storm 40A 600W Bivolt com Multímetro
         </h2>
         <span class="stock">Estoque 100</span>
-        <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
+        <div class="badge badge-blue">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 300,00</div>
-        <div id="openModal" class="btn-detail">Ver Detalhe</div>
+        <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
     </div>
     <div class="product-item">
@@ -59,7 +52,7 @@
           Ohm
         </h2>
         <span class="stock">Estoque 100</span>
-        <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
+        <div class="badge badge-blue">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 1.200,00</div>
         <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
@@ -71,7 +64,7 @@
         <span class="badge badge-red">JBL</span>
         <h2>Subwoofer 15" JBL Selenium Tornado 15SWT2200 - 1100 Watts RMS</h2>
         <span class="stock">Estoque 100</span>
-        <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
+        <div class="badge badge-blue">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
         <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
@@ -83,7 +76,7 @@
         <span class="badge badge-red">JBL</span>
         <h2>Subwoofer 15" JBL Selenium Tornado 15SWT2200 - 1100 Watts RMS</h2>
         <span class="stock">Estoque 100</span>
-        <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
+        <div class="badge badge-blue">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
         <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
@@ -95,7 +88,7 @@
         <span class="badge badge-red">JBL</span>
         <h2>Subwoofer 15" JBL Selenium Tornado 15SWT2200 - 1100 Watts RMS</h2>
         <span class="stock">Estoque 100</span>
-        <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
+        <div class="badge badge-blue">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
         <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
@@ -107,7 +100,7 @@
         <span class="badge badge-red">JBL</span>
         <h2>Subwoofer 15" JBL Selenium Tornado 15SWT2200 - 1100 Watts RMS</h2>
         <span class="stock">Estoque 100</span>
-        <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
+        <div class="badge badge-blue">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
         <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
@@ -119,7 +112,7 @@
         <span class="badge badge-red">JBL</span>
         <h2>Subwoofer 15" JBL Selenium Tornado 15SWT2200 - 1100 Watts RMS</h2>
         <span class="stock">Estoque 100</span>
-        <div class="badge badge-orange">Valor Estoque R$ 100.00</div>
+        <div class="badge badge-blue">Valor Estoque R$ 100.00</div>
         <div class="price">R$ 700,00</div>
         <div class="btn-detail openModal">Ver Detalhe</div>
       </div>
@@ -148,7 +141,6 @@
     </a>
   </nav>
   <script src="script.js" defer></script>
-
 </body>
 
 </html>

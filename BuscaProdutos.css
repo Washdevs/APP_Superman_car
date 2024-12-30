@@ -5,26 +5,43 @@ body {
   background-color: #fff;
 }
 
-header {
+.header {
+  padding: 15px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #007bff;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.73);
+}
+.header-logo {
+  height: 40px; /* Ajuste para corresponder à altura desejada */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
+.next-button {
+  background-color: #ff0026;
+  color: white;
   padding: 10px 15px;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
 }
 
-header h1 {
-  font-size: 18px;
-  color: #007bff;
-  margin: 0;
+.back-button {
+  background-color: #ff0026;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
 }
-
-header i {
-  font-size: 20px;
-  color: #007bff;
-}
-
 .search-bar {
   display: flex;
   align-items: center;
@@ -86,11 +103,15 @@ header i {
 }
 
 .badge-red {
-  background-color: #d9534f;
+  background-color: #ff0026;
 }
 
 .badge-orange {
-  background-color: #f0ad4e;
+  background-color: orange;
+}
+
+.badge-blue {
+  background-color: #0066ff;
 }
 
 .product-details .price {
@@ -103,7 +124,7 @@ header i {
 .product-details .stock {
   font-size: 12px;
   color: #fff;
-  background-color: #f0ad4e;
+  background-color: #0066ff;
   padding: 3px 8px;
   border-radius: 3px;
   display: inline-block;
@@ -151,9 +172,9 @@ header i {
 
 .close {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 18px;
+  top: 1px;
+  right: 30px;
+  font-size: 30px;
   cursor: pointer;
 }
 
