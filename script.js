@@ -126,3 +126,33 @@ function Clear() {
     console.error("Campo de entrada não encontrado.");
   }
 }
+
+let scrollAmount = 0; // Controle do deslocamento horizontal
+
+function scrollLeft() {
+  const container = document.getElementById('brand-icons');
+  const imageWidth = container.children[0].offsetWidth; // Largura de uma imagem
+  const maxScrollLeft = 0; // Limite no início
+
+  // Calcula o novo deslocamento, limitando ao início
+  scrollAmount = Math.max(scrollAmount - imageWidth, maxScrollLeft);
+  container.style.transform = `translateX(-${scrollAmount}px)`; // Aplica o deslocamento
+}
+
+function scrollRight() {
+  const container = document.getElementById('brand-icons');
+  const imageWidth = container.children[0].offsetWidth; // Largura de uma imagem
+  const maxScrollRight = container.scrollWidth - container.clientWidth; // Limite no final
+
+  // Calcula o novo deslocamento, limitando ao final
+  scrollAmount = Math.min(scrollAmount + imageWidth, maxScrollRight);
+  container.style.transform = `translateX(-${scrollAmount}px)`; // Aplica o deslocamento
+}
+
+// Inicialização (opcional, caso queira verificar se o contêiner está configurado corretamente)
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('brand-icons');
+  if (!container) {
+    console.error('Elemento "brand-icons" não encontrado!');
+  }
+});
