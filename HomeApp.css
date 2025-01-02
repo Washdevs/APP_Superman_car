@@ -21,6 +21,7 @@ body {
   height: 85px;
 }
 
+/* Container Principal */
 .cards-container {
   display: flex;
   flex-direction: column;
@@ -36,11 +37,9 @@ body {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 95%; /* Deixa os cards mais largos */
+  /* max-width: 900px; */
+  margin: 0 auto; /* Centraliza os cards */
 }
 
 /* Cards Específicos */
@@ -59,8 +58,9 @@ body {
 /* Card de Marcas */
 .card.brands {
   position: relative;
-  overflow: hidden; /* Esconde imagens fora da área visível */
+  overflow: hidden; /* Esconde imagens fora do card */
   border-left: 5px solid #2196f3;
+  padding: 20px;
 }
 
 /* Imagens dentro do Card de Marcas */
@@ -72,8 +72,8 @@ body {
 }
 
 .card.brands .brand-icons img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10%; /* Bordas arredondadas */
   border: 2px solid #ccc;
@@ -88,9 +88,9 @@ body {
 .arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  /* transform: translateY(-50%); */
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +100,7 @@ body {
   border-radius: 50%; /* Forma redonda */
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+  /* transition: background-color 0.3s ease, transform 0.3s ease-in-out; */
   z-index: 10; /* Garante que fique acima das imagens */
 }
 
@@ -120,11 +120,13 @@ body {
 
 /* Imagens e Textos dentro dos Cards */
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .card p {
   color: #555;
+  font-size: 1rem;
 }
 
 .card img {
@@ -146,7 +148,7 @@ body {
   padding: 10px;
   background-color: #004aad;
   color: #fff;
-  z-index: 1000; /* Fica acima dos outros elementos */
+  z-index: 1000;
 }
 
 .nav-item {
