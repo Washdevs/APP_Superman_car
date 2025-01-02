@@ -14,13 +14,13 @@ body {
 }
 
 .logotipo {
-  width: 200px;
-  height: 200px;
+  width: 270px;
+  height: 180px;
   margin: 40px 0;
 }
 
 .texto-login {
-  color: #666;
+  color: black;
   font-size: 24px;
   margin-bottom: 30px;
 }
@@ -60,7 +60,7 @@ input {
 }
 
 .esqueceu-senha a {
-  color: #666;
+  color: #007aff;
   text-decoration: none;
   font-size: 14px;
 }
@@ -69,7 +69,7 @@ input {
   width: 85%;
   max-width: 300px;
   padding: 12px;
-  background-color: #ffd700;
+  background-color: #ff0026;
   border: none;
   border-radius: 5px;
   color: white;

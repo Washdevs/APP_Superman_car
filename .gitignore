@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -54,3 +55,8 @@ ehthumbs.db
 # Configurações específicas para o projeto
 coverage/
 temp/
+=======
+echo "node_modules/" >> .gitignore
+echo "dist/" >> .gitignore
+echo ".env" >> .gitignore
+>>>>>>> b6b858831c57f126809af29e4aa5ecf2f7761a85
