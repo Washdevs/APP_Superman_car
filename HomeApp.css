@@ -1,13 +1,9 @@
 body {
-<<<<<<< HEAD
-  font-family: 'Roboto', sans-serif;
-=======
->>>>>>> b6b858831c57f126809af29e4aa5ecf2f7761a85
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  background-color: #f8f9fa;
 }
 
 /* Header */
@@ -20,12 +16,6 @@ body {
   color: #fff;
 }
 
-.header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .header img {
   border-radius: 5%;
   height: 85px;
@@ -36,11 +26,9 @@ body {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background-color: #f8f9fa;
-  flex: 1;
 }
 
-
+/* Cards Gerais */
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -55,6 +43,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Cards Específicos */
 .card.promo {
   border-left: 5px solid #ff5722;
 }
@@ -67,9 +56,71 @@ body {
   border-left: 5px solid #2196f3;
 }
 
+/* Card de Marcas */
+.card.brands {
+  position: relative;
+  overflow: hidden; /* Esconde imagens fora da área visível */
+  border-left: 5px solid #2196f3;
+}
+
+/* Imagens dentro do Card de Marcas */
+.card.brands .brand-icons {
+  display: flex;
+  gap: 20px; /* Espaçamento entre imagens */
+  transition: transform 0.5s ease-in-out; /* Suaviza o movimento */
+  white-space: nowrap; /* Mantém as imagens em linha única */
+}
+
+.card.brands .brand-icons img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10%; /* Bordas arredondadas */
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.card.brands .brand-icons img:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+/* Botões de Navegação no Card de Marcas */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* Fundo branco */
+  color: #004aad; /* Cor azul */
+  border: 2px solid #004aad; /* Borda azul */
+  border-radius: 50%; /* Forma redonda */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+  z-index: 10; /* Garante que fique acima das imagens */
+}
+
+.arrow:hover {
+  background-color: #004aad; /* Fundo azul no hover */
+  color: #fff; /* Setas brancas no hover */
+  transform: scale(1.1); /* Zoom leve */
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+/* Imagens e Textos dentro dos Cards */
 .card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .card p {
@@ -77,21 +128,14 @@ body {
 }
 
 .card img {
-  width: 100px; /* Define a largura fixa */
-  height: 100px; /* Define a altura fixa, igual à largura */
-  object-fit: cover; /* Ajusta o conteúdo para caber no círculo sem distorção */
-  border-radius: 50%; /* Torna a imagem redonda */
-  border: 2px solid #ccc; /* (Opcional) Adiciona uma borda à imagem */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ccc;
 }
 
-
-.brand-icons {
-  display: flex;
-  justify-content: center; /* Centraliza as imagens horizontalmente */
-  align-items: center; /* Centraliza as imagens verticalmente */
-  gap: 20px; /* Espaçamento entre as imagens */
-}
-
+/* Navegação Inferior */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -102,9 +146,8 @@ body {
   padding: 10px;
   background-color: #004aad;
   color: #fff;
-  z-index: 1000; /* Garante que fique acima de outros elementos */
+  z-index: 1000; /* Fica acima dos outros elementos */
 }
-
 
 .nav-item {
   text-align: center;
@@ -114,30 +157,10 @@ body {
 }
 
 .nav-item.active {
-  color: #ffeb3b;
+  color: #ffeb3b; /* Cor de destaque para o item ativo */
 }
 
 .nav-item i {
   font-size: 1.5rem;
   margin-bottom: 5px;
-}
-
-
-
-
-
- @media (max-width: 438px) {
-  .text-limit {
-<<<<<<< HEAD
-    white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Oculta texto que ultrapassa o limite */
-    text-overflow: ellipsis; /* Adiciona reticências (...) */
-    max-width: 22ch; /* Limita o texto a 22 caracteres */
-=======
-      white-space: nowrap;
-      overflow: hidden; 
-      text-overflow: ellipsis;
-      max-width: 22ch; 
->>>>>>> b6b858831c57f126809af29e4aa5ecf2f7761a85
-  }
 }
