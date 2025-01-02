@@ -1,4 +1,4 @@
-body {
+body { padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
@@ -28,6 +28,13 @@ body {
   gap: 20px;
   padding: 20px;
 }
+
+.cards-container::after {
+  content: '';
+  display: block;
+  height: 40px;
+}
+
 
 /* Cards Gerais */
 .card {
@@ -165,4 +172,65 @@ body {
 .nav-item i {
   font-size: 1.5rem;
   margin-bottom: 5px;
+}
+
+/* Telas pequenas (Smartphones) */
+@media (max-width: 768px) {
+  .card.brands .brand-icons img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header img {
+    height: 60px;
+  }
+
+  .cards-container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .bottom-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #004aad;
+    color: #fff;
+    z-index: 1000;
+  }
+  
+  .nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .nav-item.active {
+    color: #ffeb3b; /* Cor de destaque para o item ativo */
+  }
 }

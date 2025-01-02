@@ -131,28 +131,29 @@ let scrollAmount = 0; // Controle do deslocamento horizontal
 
 function scrollLeft() {
   const container = document.getElementById('brand-icons');
-  const imageWidth = container.children[0].offsetWidth; // Largura de uma imagem
+  const imageWidth = container.children[0].offsetWidth + 20; // Inclui o espaçamento entre imagens (gap)
   const maxScrollLeft = 0; // Limite no início
+  // Calcula o novo deslocamento
+  if (scrollAmount - imageWidth <= maxScrollLeft) {
+    // Se atingir o início, volta ao final
+    scrollAmount = container.scrollWidth - container.clientWidth;
+  } else {
+    scrollAmount -= imageWidth; // Move para a esquerda
+  }
 
-  // Calcula o novo deslocamento, limitando ao início
-  scrollAmount = Math.max(scrollAmount - imageWidth, maxScrollLeft);
   container.style.transform = `translateX(-${scrollAmount}px)`; // Aplica o deslocamento
 }
 
 function scrollRight() {
   const container = document.getElementById('brand-icons');
-  const imageWidth = container.children[0].offsetWidth; // Largura de uma imagem
+  const imageWidth = container.children[0].offsetWidth + 20; // Inclui o espaçamento entre imagens (gap)
   const maxScrollRight = container.scrollWidth - container.clientWidth; // Limite no final
-
-  // Calcula o novo deslocamento, limitando ao final
-  scrollAmount = Math.min(scrollAmount + imageWidth, maxScrollRight);
+  // Calcula o novo deslocamento
+  if (scrollAmount + imageWidth >= maxScrollRight) {
+    // Se atingir o final, volta ao início
+    scrollAmount = 0;
+  } else {
+    scrollAmount += imageWidth; // Move para a direita
+  }
   container.style.transform = `translateX(-${scrollAmount}px)`; // Aplica o deslocamento
 }
-
-// Inicialização (opcional, caso queira verificar se o contêiner está configurado corretamente)
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('brand-icons');
-  if (!container) {
-    console.error('Elemento "brand-icons" não encontrado!');
-  }
-});
