@@ -51,6 +51,7 @@ build/
 Thumbs.db
 ehthumbs.db
 *.db
+!banco.db
 
 # Configurações específicas para o projeto
 coverage/
