@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
@@ -197,9 +197,9 @@ body {
 
 @media (max-width: 438px) {
   .text-limit {
-      white-space: nowrap; /* Impede quebra de linha */
-      overflow: hidden; /* Oculta texto que ultrapassa o limite */
-      text-overflow: ellipsis; /* Adiciona reticências (...) */
-      max-width: 22ch; /* Limita o texto a 22 caracteres */
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Oculta texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona reticências (...) */
+    max-width: 22ch; /* Limita o texto a 22 caracteres */
   }
 }

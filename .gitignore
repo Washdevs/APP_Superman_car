@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios do sistema
+.DS_Store
+Thumbs.db
+
+# Diretórios do Node.js
+node_modules/
+dist/
+build/
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.bak
+*.orig
+*.old
+
+# Arquivos do editor de texto
+*.sublime-workspace
+*.vscode/
+.idea/
+*.code-workspace
+
+# Cache do Babel
+.cache/
+
+# Arquivos gerados por bundlers e ferramentas
+*.min.js
+*.map
+
+# Configurações locais do ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos temporários do navegador
+*.css.map
+*.js.map
+
+# Dependências externas baixadas manualmente
+/vendor/
+
+# Arquivos do sistema operacional
+Thumbs.db
+ehthumbs.db
+*.db
+
+# Configurações específicas para o projeto
+coverage/
+temp/
