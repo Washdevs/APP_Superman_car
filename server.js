@@ -1,11 +1,16 @@
 import express from 'express';
 import sqlite3 from 'sqlite3';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+
+// Criação manual de __dirname para ES modules
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-const db = new sqlite3.Database('./branco.db');
+const db = new sqlite3.Database('./banco.db');
 
-// Servir arquivos estáticos
-app.use(express.static('public'));
+// Servir arquivos estáticos no mesmo diretório
+app.use(express.static(__dirname));
 
 // Endpoint para buscar produtos
 app.get('/produtos', (req, res) => {
