@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+</head>
+
+<body>
+    <div class="produto"></div>
+    <script>
+        // Substitua o ID conforme necessário
+        const id = 1;
+        // Faz uma requisição ao backend para obter o nome do produto
+        fetch(`/produto/${id}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Produto não encontrado');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.querySelector('.produto').innerText = data.nome;
+            })
+            .catch(error => {
+                document.querySelector('.produto').innerText = error.message;
+            });
+    </script>
+</body>
+
+</html>
