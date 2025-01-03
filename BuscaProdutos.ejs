@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busca de Produtos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="BuscaProdutos.css" />
+</head>
+
+<body>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="HomeApp.html" style="text-decoration: none; color: inherit;">
+      <i class="fas fa-chevron-left back-button" id="left-arrow"></i>
+    </a>
+    <img src="imagens/Logo3.png" alt="Informações do Produto" class="header-logo" />
+    <i class="fas fa-chevron-right next-button" id="right-arrow"></i>
+  </div>
+
+  <!-- Input para pesquisa -->
+  <div class="input-wrapper">
+    <input type="text" id="input" placeholder="Pesquisar" />
+    <i class="fas fa-times" onclick="Clear()"></i>
+  </div>
+
+  <!-- Lista de Produtos -->
+  <div class="product-list">
+    <!-- Exibir produto com ID 1 -->
+    <% const produto1 = produtos.find(produto => produto.id === 1); %>
+    <% if (produto1) { %>
+      <div class="product-item">
+        <img src="imagens/subwoofer.png" alt="Imagem do produto <%= produto1.nome %>" />
+        <div class="product-details">
+          <span class="badge badge-red"><%= produto1.marca %></span>
+          <h2><%= produto1.nome %></h2>
+          <p><strong>Preço:</strong> R$ <%= produto1.preco.toFixed(2) %></p>
+          <p><strong>Estoque:</strong> <%= produto1.qtd_estoque %></p>
+        </div>
+      </div>
+    <% } %>
+
+    <!-- Exibir produto com ID 2 -->
+    <% const produto2 = produtos.find(produto => produto.id === 2); %>
+    <% if (produto2) { %>
+      <div class="product-item">
+        <img src="imagens/Fonte.jpg" alt="Imagem do produto <%= produto2.nome %>" />
+        <div class="product-details">
+          <span class="badge badge-red"><%= produto2.marca %></span>
+          <h2><%= produto2.nome %></h2>
+          <p><strong>Preço:</strong> R$ <%= produto2.preco.toFixed(2) %></p>
+          <p><strong>Estoque:</strong> <%= produto2.qtd_estoque %></p>
+        </div>
+      </div>
+    <% } %>
+
+    <!-- Exibir produto com ID 3 -->
+    <% const produto3 = produtos.find(produto => produto.id === 3); %>
+    <% if (produto3) { %>
+      <div class="product-item">
+        <img src="imagens/caixadesom.png" alt="Imagem do produto <%= produto3.nome %>" />
+        <div class="product-details">
+          <span class="badge badge-red"><%= produto3.marca %></span>
+          <h2><%= produto3.nome %></h2>
+          <p><strong>Preço:</strong> R$ <%= produto3.preco.toFixed(2) %></p>
+          <p><strong>Estoque:</strong> <%= produto3.qtd_estoque %></p>
+        </div>
+      </div>
+    <% } %>
+  </div>
+
+  <!-- Navegação Inferior -->
+  <nav class="bottom-nav">
+    <a class="nav-item" href="#">
+      <i class="fas fa-home"></i>
+      <br />Início
+    </a>
+    <a class="nav-item active" href="#">
+      <i class="fas fa-box"></i>
+      <br />Produtos
+    </a>
+    <a class="nav-item" href="#">
+      <i class="fas fa-cog"></i>
+      <br />Serviços
+    </a>
+    <a class="nav-item" href="#">
+      <i class="fas fa-bars"></i>
+      <br />Menu
+    </a>
+  </nav>
+
+  <script src="script.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+
+</html>
