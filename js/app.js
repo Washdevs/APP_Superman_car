@@ -1,5 +1,5 @@
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
+import sqlite3 from "sqlite3";
+import { open } from "sqlite";
 
 async function criarEPopularTabelaUsuarios(
   nome,
@@ -17,10 +17,10 @@ async function criarEPopularTabelaUsuarios(
   garantia = null,
   sku = null,
   desconto = 0.0,
-  imposto_aplicado = 0.0,
+  imposto_aplicado = 0.0
 ) {
   const db = await open({
-    filename: './banco.db',
+    filename: "./banco.db",
     driver: sqlite3.Database,
   });
   db.run(
@@ -29,7 +29,7 @@ async function criarEPopularTabelaUsuarios(
     categoria TEXT, fornecedor TEXT, dt_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
     dt_update DATETIME DEFAULT CURRENT_TIMESTAMP, un_de_medida TEXT, status TEXT DEFAULT 'ativo',
     cod_barras TEXT UNIQUE, marca TEXT, modelo TEXT, peso REAL, dimensoes TEXT, garantia INTEGER,
-    sku TEXT UNIQUE, desconto REAL DEFAULT 0.0, imposto_aplicado REAL DEFAULT 0.0)`,
+    sku TEXT UNIQUE, desconto REAL DEFAULT 0.0, imposto_aplicado REAL DEFAULT 0.0)`
   );
   db.run(
     `INSERT INTO produto (
@@ -37,26 +37,26 @@ async function criarEPopularTabelaUsuarios(
       un_de_medida, cod_barras, marca, modelo, peso, dimensoes, 
       garantia, sku, desconto, imposto_aplicado
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-    'Caixa Trio Completa Sub Jbl + 4 Corneta 2 Tweeter',
-    'Caixa Trio Completa Sub Jbl + 4 Corneta 2 Tweeter',
-    1699.90,
+    "Caixa Trio Completa Sub Jbl + 4 Corneta 2 Tweeter",
+    "Caixa Trio Completa Sub Jbl + 4 Corneta 2 Tweeter",
+    1699.9,
     5,
-    'Áudio Automotivo',
-    'Prodção Superman',
-    '29cm altura',
-    '2891376308011',
-    'Produção Superman',
-    'Caixa Trio Sub JBL',
+    "Áudio Automotivo",
+    "Prodção Superman",
+    "29cm altura",
+    "2891376308011",
+    "Produção Superman",
+    "Caixa Trio Sub JBL",
     19,
-    '25.9x15.1x5.8 cm',
+    "25.9x15.1x5.8 cm",
     12,
-    'JBLPBCLUB120SWBL',
+    "JBLPBCLUB120SWBL",
     5.0,
-    15.0,
+    15.0
   );
-  console.log('Tabela criada e dados do produto inseridos com sucesso!');
+  console.log("Tabela criada e dados do produto inseridos com sucesso!");
 }
 
 criarEPopularTabelaUsuarios().catch((error) => {
-  console.error('Erro ao criar tabela ou inserir dados:', error.message);
+  console.error("Erro ao criar tabela ou inserir dados:", error.message);
 });
