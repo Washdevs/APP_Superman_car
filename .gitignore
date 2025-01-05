@@ -9,7 +9,7 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Diretórios do Node.js
+# Diretórios Node.js
 node_modules/
 dist/
 build/
