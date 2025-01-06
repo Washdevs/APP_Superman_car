@@ -9,24 +9,6 @@ body {
   background-color: white;
 }
 
-.back-button {
-  color: #007aff;
-  text-decoration: none;
-  font-size: 16px;
-  position: absolute;
-  top: 20px;
-  left: 15px;
-}
-
-.cancel-button {
-  color: #007aff;
-  text-decoration: none;
-  font-size: 16px;
-  position: absolute;
-  top: 20px;
-  right: 15px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -36,8 +18,8 @@ body {
 }
 
 .superman-logo {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   margin: 30px 0;
 }
 
@@ -66,7 +48,7 @@ body {
 }
 
 .resend-link {
-  color: #666;
+  color: #2c60b4;
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 20px;
@@ -76,7 +58,7 @@ body {
   width: 100%;
   max-width: 300px;
   padding: 15px;
-  background-color: #ffd700;
+  background-color: #ff0026;
   border: none;
   border-radius: 8px;
   color: white;
