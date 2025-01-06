@@ -6,37 +6,19 @@ body {
   background-color: white;
 }
 
-.status-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 15px;
-  font-size: 14px;
-  color: black;
-}
-
-.back-button {
-  color: #007aff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.cancel-button {
-  color: #007aff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
 .container {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .superman-logo {
-  width: 250px;
-  height: 180px;
-  margin-bottom: 20px;
+  width: 240px;
+  height: 170px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -96,7 +78,7 @@ input {
 .save-button {
   width: 100%;
   padding: 15px;
-  background-color: #ffd700;
+  background-color: #ff0026;
   border: none;
   border-radius: 8px;
   color: white;
