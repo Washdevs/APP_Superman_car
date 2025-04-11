@@ -1,7 +1,7 @@
 import React from 'react';
 import { products } from './Stock';
 import { Link } from 'react-router-dom';
-import logo from './assets/imagens/logo.png'; // Import the logo
+import logo from './assets/logo.png'; // Import the logo
 
 function Dashboard() {
   const totalProducts = products.reduce((acc, product) => acc + product.quantity, 0);

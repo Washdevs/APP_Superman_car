@@ -1,54 +1,54 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./App.css"; // Importe o arquivo CSS
-import Logo3 from "./assets/imagens/Logo3.png"; // Importe o logotipo
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './App.css'; // Importe o arquivo CSS
+import Logo3 from './assets/Logo3.png'; // Importe o logotipo
 
 const mockProducts = [
   {
     id: 1,
-    name: "Fonte Carregador Automotivo Storm 40A",
-    brand: "JFA",
+    name: 'Fonte Carregador Automotivo Storm 40A',
+    brand: 'JFA',
     stock: 100,
-    stockValue: "R$ 100.00",
-    price: "R$ 300,00",
-    image: "/assets/imagens/Fonte.jpg",
+    stockValue: 'R$ 100.00',
+    price: 'R$ 300,00',
+    image: '/assets/Fonte.jpg',
   },
   {
     id: 2,
-    name: "Módulo Amplificador Digital Taramps MD 8000",
-    brand: "Taramps",
+    name: 'Módulo Amplificador Digital Taramps MD 8000',
+    brand: 'Taramps',
     stock: 100,
-    stockValue: "R$ 100.00",
-    price: "R$ 1.200,00",
-    image: "/assets/imagens/modulo.png",
+    stockValue: 'R$ 100.00',
+    price: 'R$ 1.200,00',
+    image: '/assets/modulo.png',
   },
   {
     id: 3,
     name: 'Subwoofer 15" JBL Selenium Tornado 15SWT2200 - 1100 Watts RMS',
-    brand: "JBL",
+    brand: 'JBL',
     stock: 100,
-    stockValue: "R$ 100.00",
-    price: "R$ 700,00",
-    image: "/assets/imagens/subwoofer.png",
+    stockValue: 'R$ 100.00',
+    price: 'R$ 700,00',
+    image: '/assets/subwoofer.png',
   },
 ];
 
 function SearchProducts() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
   const [products, setProducts] = useState(mockProducts);
 
-  const filteredProducts = products.filter((product) =>
+  const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   ); // Filtra os produtos pelo termo de pesquisa
 
   const clearInput = () => {
-    setSearchTerm("");
+    setSearchTerm('');
   }; // Limpa o campo de pesquisa
 
   return (
     <div className="search-products-page">
       <div className="header">
-        <Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link to="/dashboard" style={{ textDecoration: 'none', color: 'inherit' }}>
           <i className="fas fa-chevron-left back-button" id="left-arrow"></i>
         </Link>
         <img src={Logo3} alt="Informações do Produto" className="header-logo" />
@@ -61,20 +61,15 @@ function SearchProducts() {
           id="input"
           placeholder="Pesquisar"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={e => setSearchTerm(e.target.value)}
         />
-        {searchTerm && (
-          <i className="fas fa-times" onClick={clearInput}></i>
-        )}
+        {searchTerm && <i className="fas fa-times" onClick={clearInput}></i>}
       </div>
 
       <div className="product-list">
-        {filteredProducts.map((product) => (
+        {filteredProducts.map(product => (
           <div key={product.id} className="product-item">
-            <img
-              src={product.image}
-              alt={product.name}
-            />
+            <img src={product.image} alt={product.name} />
             <div className="product-details">
               <span className="badge badge-red">{product.brand}</span>
               <h2>{product.name}</h2>
