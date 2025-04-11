@@ -1,41 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css'; // Importe o arquivo CSS
+// eslint-disable-next-line no-unused-vars
+import products from './products';
 import Logo3 from './assets/Logo3.png'; // Importe o logotipo
 
-const mockProducts = [
-  {
-    id: 1,
-    name: 'Fonte Carregador Automotivo Storm 40A',
-    brand: 'JFA',
-    stock: 100,
-    stockValue: 'R$ 100.00',
-    price: 'R$ 300,00',
-    image: '/assets/Fonte.jpg',
-  },
-  {
-    id: 2,
-    name: 'Módulo Amplificador Digital Taramps MD 8000',
-    brand: 'Taramps',
-    stock: 100,
-    stockValue: 'R$ 100.00',
-    price: 'R$ 1.200,00',
-    image: '/assets/modulo.png',
-  },
-  {
-    id: 3,
-    name: 'Subwoofer 15" JBL Selenium Tornado 15SWT2200 - 1100 Watts RMS',
-    brand: 'JBL',
-    stock: 100,
-    stockValue: 'R$ 100.00',
-    price: 'R$ 700,00',
-    image: '/assets/subwoofer.png',
-  },
-];
-
-function SearchProducts() {
+export function SearchProducts() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [products, setProducts] = useState(mockProducts);
+  // eslint-disable-next-line no-unused-vars
+  const [products, setProducts] = useState([]);
 
   const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())

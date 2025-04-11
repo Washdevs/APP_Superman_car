@@ -1,23 +1,15 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  NavLink,
-} from "react-router-dom";
-import Login from "./Login";
-import Dashboard from "./Dashboard";
-import Stock from "./Stock";
-import SearchProducts from "./SearchProducts";
-import DetailsProduct from "./DetailsProduct";
-import "./App.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faBoxes,
-  faSearch,
-} from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
+import { Link } from 'react-router-dom';
+import { Login } from './Login';
+import Dashboard from './Dashboard';
+import { Stock } from './Stock';
+import { SearchProducts } from './SearchProducts';
+import DetailsProduct from './DetailsProduct';
+import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faBoxes, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
   return (
@@ -32,11 +24,7 @@ const App = () => {
           <Route path="/" element={<Login />} />
         </Routes>
         <nav className="bottom-nav">
-          <NavLink
-            to="/dashboard"
-            className="nav-item"
-            activeClassName="active"
-          >
+          <NavLink to="/dashboard" className="nav-item" activeClassName="active">
             <FontAwesomeIcon icon={faHome} />
             <br />
             Início
@@ -46,11 +34,7 @@ const App = () => {
             <br />
             Estoque
           </NavLink>
-          <NavLink
-            to="/search"
-            className="nav-item"
-            activeClassName="active"
-          >
+          <NavLink to="/search" className="nav-item" activeClassName="active">
             <FontAwesomeIcon icon={faSearch} />
             <br />
             Buscar
@@ -62,4 +46,3 @@ const App = () => {
 };
 
 export default App;
-

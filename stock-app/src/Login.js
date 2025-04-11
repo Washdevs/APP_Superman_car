@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './App.css'; // Import the CSS file
 import logo from './assets/logo.png';
 
-function Login() {
+export function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -47,5 +47,3 @@ function Login() {
     </body>
   );
 }
-
-export default Login;

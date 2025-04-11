@@ -1,57 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
+import products from './products';
 import './App.css'; // Import the CSS file
 
-function Stock() {
-  const [products, setProducts] = useState([
-    {
-      id: 1,
-      name: 'Caixa de Som',
-      brand: 'Superman',
-      stock: 500,
-      description: 'Caixa de Som Bluetooth',
-      price: 500.00,
-      image: '/assets/imagens/caixadesom.png',
-    },
-    {
-      id: 2,
-      name: 'Product 2',
-      brand: 'JFA',
-      stock: 500,
-      description: 'Descrição do produto - Descrição do p...',
-      price: 0.00,
-      image: '/assets/imagens/Fonte.jpg',
-    },
-    {
-      id: 3,
-      name: 'Product 3',
-      brand: 'Philips',
-      stock: 500,
-      description: 'Descrição do produto - Descrição do p...',
-      price: 0.00,
-      image: '/assets/imagens/lampada.png',
-    },
-    {
-      id: 4,
-      name: 'Product 4',
-      brand: 'Taramps',
-      stock: 500,
-      description: 'Descrição do produto - Descrição do p...',
-      price: 0.00,
-      image: '/assets/imagens/modulo.png',
-    },
-    {
-      id: 5,
-      name: 'Product 5',
-      brand: 'Stetsom',
-      stock: 500,
-      description: 'Descrição do produto - Descrição do p...',
-      price: 0.00,
-      image: '/assets/imagens/modulostet.png',
-    },
-  ]);
+export function Stock() {
+  // eslint-disable-next-line no-unused-vars
+  const [products, setProducts] = useState([]);
 
-  const handleEdit = (id) => {
+  const handleEdit = id => {
     // Implement your edit functionality here
     console.log(`Edit product with id ${id}`);
   };
@@ -87,7 +44,7 @@ function Stock() {
       </div>
 
       <div className="product-list">
-        {products.map((product) => (
+        {products.map(product => (
           <div className="product-card" key={product.id}>
             <img src={product.image} alt={product.name} height="150" width="150" />
             <div className="product-info">
@@ -105,4 +62,3 @@ function Stock() {
     </div>
   );
 }
-export default Stock;
