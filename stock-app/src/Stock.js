@@ -25,7 +25,7 @@ export function Stock() {
           <i className="fas fa-chevron-left back-icon"> </i>
         </Link>
         <div className="logo">
-          <img src="/assets/imagens/Logo.png" alt="Logo" height="60" width="60" />
+          <img src="./assets/logo.png" alt="Logo" height="60" width="60" />
           <span> Stock App </span>
         </div>
         <Link to="/search" style={{ textDecoration: 'none', color: 'inherit' }}>
