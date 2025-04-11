@@ -24,3 +24,822 @@ body {
 .container {
   padding: 20px;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  height: 90vh;
+}
+
+.icones-de-status {
+  display: flex;
+  gap: 5px;
+}
+
+.logotipo {
+  width: 270px;
+  height: 180px;
+  margin: 20px 0;
+}
+
+.texto-login {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.caixa-input {
+  width: 85%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.caixa-senha {
+  position: relative;
+}
+
+.icone-olho {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.esqueceu-senha {
+  text-align: right;
+  width: 85%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.esqueceu-senha a {
+  color: #007aff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.botao-entrar {
+  width: 85%;
+  max-width: 300px;
+  padding: 12px;
+  background-color: #ff0026;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.texto-cadastro {
+  color: #666;
+  font-size: 14px;
+}
+
+.texto-cadastro a {
+  color: #007aff;
+  text-decoration: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #004aad;
+  color: #fff;
+}
+
+.header img {
+  border-radius: 5%;
+  height: 85px;
+}
+
+/* Container Principal */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cards-container::after {
+  content: '';
+  display: block;
+  height: 40px;
+}
+
+/* Cards Gerais */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 95%; /* Deixa os cards mais largos */
+  /* max-width: 900px; */
+  margin: 0 auto; /* Centraliza os cards */
+}
+
+/* Cards Específicos */
+.card.promo {
+  border-left: 5px solid #ff5722;
+}
+
+.card.discount {
+  border-left: 5px solid #4caf50;
+}
+
+.card.category {
+  border-left: 5px solid #2196f3;
+}
+
+/* Card de Marcas */
+.card.brands {
+  position: relative;
+  overflow: hidden; /* Esconde imagens fora do card */
+  border-left: 5px solid #2196f3;
+  padding: 20px;
+}
+
+/* Imagens dentro do Card de Marcas */
+.card.brands .brand-icons {
+  display: flex;
+  gap: 20px; /* Espaçamento entre imagens */
+  transition: transform 0.5s ease-in-out; /* Suaviza o movimento */
+  white-space: nowrap; /* Mantém as imagens em linha única */
+}
+
+.card.brands .brand-icons img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10%; /* Bordas arredondadas */
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.card.brands .brand-icons img:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+/* Botões de Navegação no Card de Marcas */
+.arrow {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* Fundo branco */
+  color: #004aad; /* Cor azul */
+  border: 2px solid #004aad; /* Borda azul */
+  border-radius: 50%; /* Forma redonda */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  /* transition: background-color 0.3s ease, transform 0.3s ease-in-out; */
+  z-index: 10; /* Garante que fique acima das imagens */
+}
+
+.arrow:hover {
+  background-color: #004aad; /* Fundo azul no hover */
+  color: #fff; /* Setas brancas no hover */
+  transform: scale(1.1); /* Zoom leve */
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+/* Imagens e Textos dentro dos Cards */
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+/* Navegação Inferior */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #004aad;
+  color: #fff;
+  z-index: 1000;
+}
+
+.nav-item {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.nav-item.active {
+  color: #ffeb3b; /* Cor de destaque para o item ativo */
+}
+
+.nav-item i {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* Telas pequenas (Smartphones) */
+@media (max-width: 768px) {
+  .card.brands .brand-icons img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header img {
+    height: 60px;
+  }
+
+  .cards-container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .bottom-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #004aad;
+    color: #fff;
+    z-index: 1000;
+  }
+
+  .nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  .nav-item.active {
+    color: #ffeb3b; /* Cor de destaque para o item ativo */
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-wrapper input {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 85%;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9; /* Sombra no input */
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: lightcoral;
+}
+
+.input-wrapper i {
+  position: absolute;
+  right: 1rem;
+  width: 24px; /* Tamanho do contêiner */
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px; /* Tamanho do "X" */
+  background-color: #f5f5f5; /* Cor de fundo */
+  border-radius: 0.5rem; /* Borda arredondada */
+  color: #333;
+  box-shadow: 0 0.4rem #dfd9d9; /* Sombra igual ao input */
+}
+
+.input-wrapper i:hover {
+  background-color: #ddd; /* Cor ao passar o mouse */
+  color: #000;
+}
+
+.header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: #007bff;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.73);
+}
+
+.header-logo {
+  height: 40px; /* Ajuste para corresponder à altura desejada */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
+.next-button {
+  background-color: #ff0026;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #ff0026;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-bar i {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.product-list {
+  padding: 15px;
+}
+
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.product-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h2 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.product-details .badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.badge-red {
+  background-color: #ff0026;
+}
+
+.badge-orange {
+  background-color: orange;
+}
+
+.badge-blue {
+  background-color: #0066ff;
+}
+
+.product-details .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d9534f;
+  margin-top: 5px;
+}
+
+.product-details .stock {
+  font-size: 12px;
+  color: #fff;
+  background-color: #0066ff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.product-details .btn-detail {
+  background-color: #ffeb3b;
+  color: #333;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-detail:hover {
+  background-color: #ddcc30;
+}
+
+.modal {
+  display: none; /* Ocultar modal inicialmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  color: #007bff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: rgba(245, 245, 245, 0.73);
+  padding-bottom: 60px;
+}
+
+.header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #007bff;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.73);
+}
+
+.header-logo {
+  height: 40px; /* Ajuste para corresponder à altura desejada */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
+.product-image {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 20%;
+  height: auto;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.brand-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 10px;
+  background-color: #ff0026;
+}
+
+.product-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: green;
+}
+
+.stock-info {
+  position: relative; /* Permite posicionamento absoluto dos elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.cart-button {
+  position: absolute; /* Para posicionar o botão em relação ao .stock-info */
+  top: 0; /* Alinha ao topo */
+  right: 0; /* Alinha à direita */
+  height: 100%; /* Ocupa toda a altura de .stock-info */
+  width: 50px; /* Largura fixa para o botão */
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: white; /* Cor do ícone */
+  border: none;
+  border-radius: 0 5px 5px 0; /* Arredonda os cantos direitos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10; /* Garante que o botão fique à frente dos outros elementos */
+}
+
+.cart-button i {
+  font-size: 20px; /* Ajusta o tamanho do ícone */
+}
+
+.cart-button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.stock-tag {
+  background-color: #ff0026;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.stock-value {
+  margin-top: 3px;
+  background-color: #ff0026;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.description {
+  background-color: white;
+  padding: 20px;
+  margin: 5px 20px 5px 20px;
+}
+
+.description h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.buy-button-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-top: 20px; /* Ajusta o espaçamento vertical conforme necessário */
+}
+
+.buy-button {
+  background-color: #ff0026;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.next-button {
+  background-color: #ff0026;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #ff0026;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  color: #007bff;
+}
+
+@media (max-width: 480px) {
+  .product-image {
+    max-width: 60%; /* A largura da imagem será 90% do contêiner */
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+
+  .header {
+    font-size: 14px; /* Reduz o tamanho do texto no cabeçalho */
+    padding: 10px;
+  }
+
+  .header-logo {
+    height: 20px; /* Ajuste para corresponder à altura desejada */
+    width: auto; /* Mantém a proporção da imagem */
+  }
+
+  .product-info {
+    padding: 20px 20px 1px 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .product-title {
+    font-size: 16px; /* Ajusta o tamanho do título */
+  }
+
+  .price {
+    font-size: 18px; /* Reduz o tamanho do preço */
+  }
+
+  .description h3 {
+    font-size: 14px; /* Ajusta o tamanho do subtítulo */
+  }
+
+  .description p {
+    font-size: 12px; /* Ajusta o tamanho do texto */
+  }
+  .description {
+    padding-bottom: 5px;
+  }
+
+  .buy-button {
+    font-size: 14px; /* Reduz o tamanho do botão */
+    padding: 8px 16px;
+  }
+
+  .bottom-nav {
+    font-size: 10px; /* Ajusta o tamanho dos itens do menu inferior */
+    padding: 8px;
+  }
+}
